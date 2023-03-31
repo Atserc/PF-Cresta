@@ -1,0 +1,371 @@
+/*
+Paleta Summer
+#FAC89F
+#FCDABF
+#BFE9F1
+#A1DCE9
+#7AD1E1
+*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-image: linear-gradient(to bottom,#FAC89F,#7AD1E1);
+	font-family: 'Oswald',"Times New Roman", sans-serif;
+}
+
+header 
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 10%;
+	padding: 15px;
+}
+
+.menu  /* nav */
+{
+	float: left;
+	margin: 5px;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.botonMenu /* li */
+{
+	float: left;
+	font-size: 20px;
+	padding: 0 15px 0 15px;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.botonMenu:hover
+{
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.pagActual
+{
+	float: left;
+	padding: 0 15px 0 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+main
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 70%;
+}
+
+section
+{
+	background-color: rgba(0, 0, 0, 0.3);	
+	width: 100%;
+	height: 30%;
+}
+
+article
+{
+	background-color: rgba(0, 0, 0, 0.3);	
+	width: 70%;
+	height: 100%;
+}
+
+aside
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 30%;
+	height: 100%;
+}
+
+footer
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 10%;
+	margin: 3px;
+	text-align: right;
+}
+
+.centrar
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centrarV
+{
+	vertical-align: middle;
+}
+
+.vacio
+{
+	display: none;
+}
+
+.tituloSP
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline ;
+}
+
+/* css peliculas, series y anime */
+
+.catalogo
+{
+	display: flex;
+	overflow-x: auto;
+}
+
+.grid-layout
+{
+	background-size: cover;
+	border: 2px solid black;
+	width: 50%;
+	filter: contrast(100%);
+	padding: 10px;
+	flex: none;
+	
+	display: grid;
+	grid-template-rows: 15% 30% 15% 40%;
+	grid-template-columns: 25% 25% 50%;
+
+	grid-template-areas: 	'tituloIndiv tituloIndiv tituloIndiv'
+							'sinopsis sinopsis portada'
+							'dondeVer puntuacion portada'
+							'trailer trailer portada';
+
+	row-gap: 3px;
+	column-gap: 3px;
+
+}
+
+.gridPelis
+{
+	background-image: url('../assets/img/fondos/fondoPeliculas.jpg');
+}
+
+.gridSeries
+{
+	background-image: url('../assets/img/fondos/fondoSeries.jpg');
+}
+
+.gridAnime
+{
+	background-image: url('../assets/img/fondos/fondoAnime.jpg');
+}
+
+.tituloIndiv
+{
+	grid-area: tituloIndiv;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sinopsis
+{
+	grid-area: sinopsis;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.dondeVer
+{
+	grid-area: dondeVer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+	justify-self: center;
+	padding: auto;
+}
+
+.puntuacion
+{
+	grid-area: puntuacion;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-weight: bold;
+	padding: 10px;
+	justify-self: center;
+	align-self: center;
+}
+
+.trailer
+{
+	grid-area: trailer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+}
+
+.portada
+{
+	grid-area: portada;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+}
+
+
+/* CSS TEST */
+
+
+.grid-layout
+{
+	background-size: cover;
+	border: 2px solid black;
+	width: 50%;
+	height: 100%;
+	filter: contrast(100%);
+
+	display: grid;
+	grid-template-rows: 15% 30% 15% 40%;
+	grid-template-columns: 25% 25% 50%;
+
+	grid-template-areas: 	'tituloIndiv tituloIndiv tituloIndiv'
+												'sinopsis sinopsis portada'
+												'dondeVer puntuacion portada'
+												'trailer trailer portada';
+
+	row-gap: 3px;
+	column-gap: 3px;
+
+}
+
+.gridPelis
+{
+	background-image: url('../img/fondos/fondoPeliculas.jpg');
+}
+
+.gridSerie
+{
+	background-image: url('../img/fondos/fondoSeries.jpg');
+}
+
+.gridAnime
+{
+	background-image: url('../img/fondos/fondoAnime.jpg');
+}
+
+.tituloIndiv
+{
+	/*grid-column: 1/4;
+	grid-row: 1/2; */
+
+	grid-area: tituloIndiv;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sinopsis
+{
+	/*grid-column: 1/3;
+	grid-row: 2/3;*/
+
+	grid-area: sinopsis;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.dondeVer
+{
+	/*grid-column: 1/2;
+	grid-row: 3/4;*/
+
+	grid-area: dondeVer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+	justify-self: center;
+	padding: auto;
+}
+
+.puntuacion
+{
+	/*grid-column: 2/3;
+	grid-row: 3/4;*/
+
+	grid-area: puntuacion;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-weight: bold;
+	padding: 10px;
+	justify-self: center;
+	align-self: center;
+}
+
+.trailer
+{
+	/*grid-column: 1/3;
+	grid-row: 4/6;*/
+
+	grid-area: trailer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+}
+
+.portada
+{
+	/*grid-column: 3/4;
+	grid-row: 2/6;*/
+
+	grid-area: portada;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+}
+
+

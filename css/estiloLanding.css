@@ -1,0 +1,10 @@
+body
+{
+    background-size: cover;
+    background-image: url('../assets/img/fondos/fondoLanding.jpg');
+}
+
+.botonSitio
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
