@@ -73,7 +73,6 @@ a
 	font-weight: bold;
 }
 
-
 main
 {
 	background-color: rgba(0, 0, 0, 0.3);
@@ -86,20 +85,6 @@ section
 	background-color: rgba(0, 0, 0, 0.3);	
 	width: 100%;
 	height: 30%;
-}
-
-article
-{
-	background-color: rgba(0, 0, 0, 0.3);	
-	width: 70%;
-	height: 100%;
-}
-
-aside
-{
-	background-color: rgba(0, 0, 0, 0.3);
-	width: 30%;
-	height: 100%;
 }
 
 footer
@@ -287,9 +272,32 @@ footer
 	}
 
 	.botonDondeVer
-{
-	padding: 3px;
-	width: 25px;
-	height: 25px;
-}
+	{
+		padding: 3px;
+		width: 25px;
+		height: 25px;
+	}
+	.botonInicio
+	{
+		width: 60px ;
+		height: 40px ;
+	}
+
+	.botonMenu
+	{
+		float: left;
+		font-size: 15px;
+		padding: 0 5px 0 5px;
+	}
+
+	.botonMenu:hover
+	{
+		font-size: 20px;
+	}
+
+	.pagActual
+	{
+		padding: 0 5px 0 5px;
+		font-size: 20px;
+	}
 }

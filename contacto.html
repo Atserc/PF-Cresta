@@ -5,33 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contacto | QyD</title>
 	<link rel="icon" href="assets/img/icon.png">
-	<link rel="stylesheet" type="text/css" href="css/estiloContacto.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 
-<body>
-<header>
+<body class="bg-warning">
+<header class="row col-12 p-lg-3 p-sm-2 p-1 bg-opacity-25 bg-black">
 	<nav class="nav p-2 align-items-center">
 		<a href="index.html"><img src="assets/img/botones/inicioQyD.jpg" width="90px" height="60px"></a>
-		<a class="nav-link" href="peliculas.html"> Películas</a>
-		<a class="nav-link" href="series.html"> Series </a>
-		<a class="nav-link" href="anime.html"> Anime </a>
-		<a class="nav-link active" aria-current="page">Contacto</a>	
+		<a class="nav-link text-black" href="peliculas.html"> Películas</a>
+		<a class="nav-link text-black" href="series.html"> Series </a>
+		<a class="nav-link text-black" href="anime.html"> Anime </a>
+		<a class="nav-link text-black" aria-current="page">Contacto</a>	
 	</nav>
 </header>
 
-<main>
-
-	<h1 class="tituloSP"> Contacto </h1>
-
-	<form>
-		<input type="email" name="" placeholder="Escriba su correo">
-		<br><br>
-		<input type="text" name="nombre" placeholder="Escribe tu consulta aquí">
-		<br><br>
-		<a href="mailto:crearUnEmail@gmailfalso.com>"><input type="button" name="" value="Enviar"></a>
-		<input type="reset" name="Restablecer">
+<main class="row col-12 p-lg-3 p-sm-2 p-1 justify-content-center">
+	<h1> Contacto </h1>
+	<form class="d-flex flex-column w-50 text-center">
+		<input type="email" name="" placeholder="Escriba su correo" class="m-lg-3 m-sm-2 m-1">
+		<input type="text" name="nombre" placeholder="Escribe tu consulta aquí" class="m-lg-3 m-sm-2 m-1">
+		<a href="mailto:crearUnEmail@gmailfalso.com>"><input type="button" value="Enviar" class="m-lg-3 m-sm-2 m-1"></a>
+		<input type="reset" name="Restablecer" class="m-lg-3 m-sm-2 m-1">
 	</form>
 
 </main>
