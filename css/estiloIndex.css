@@ -77,7 +77,6 @@ a
 
 main
 {
-	background-color: rgba(0, 0, 0, 0.3);
 	width: 100%;
 	height: 70%;
 	overflow: auto;
@@ -85,34 +84,25 @@ main
 
 section
 {
-	background-color: rgba(0, 0, 0, 0.3);	
 	width: 100%;
 	height: 30%;
 }
 
-footer
+.plataformas
 {
 	background-color: rgba(0, 0, 0, 0.3);
-	width: 100%;
-	height: 10%;
-	margin: 3px;
-	text-align: right;
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: center;
+
 }
 
-.centrar
+.botonPlataforma
 {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.centrarV
-{
-	vertical-align: middle;
-}
-
-.vacio
-{
-	display: none;
+	padding: 2px;
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
 }
 
 .tituloSP
@@ -124,50 +114,145 @@ footer
 	text-decoration: underline ;
 }
 
-/* css peliculas, series y anime */
-
-
-.dondeYpuntuacion {
-  padding: 5px;
-  text-align: center;
-  border: solid 1px;
-}
-
-.sinopsis 
+.grid-layout
 {
-	text-align: left;
-	font-style: italic;
-	border: solid 1px;
-	padding: 5px;
-}
+	border: 2px solid black;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	flex: none;
+	
+	display: grid;
+	grid-template-rows: 15% 25% 15% 45%;
+	grid-template-columns: 60% 40%;
 
-.trailer
-{
-	text-align: center;
-	border: solid 1px;
-	padding: 5px;
-}
+	grid-template-areas: 	'tituloIndiv tituloIndiv'
+							'sinopsis portada'
+							'dondeVer portada'
+							'trailer portada';
 
-.portada
-{
-	border: solid 1px;
-}
+	row-gap: 3px;
+	column-gap: 3px;
 
-th
+}
+.tituloIndiv
 {
+	grid-area: tituloIndiv;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
 }
 
-h2
+.sinopsis
 {
-	font-size: 20px
+	grid-area: sinopsis;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	font-style: italic;
+	font-weight: bold;
+	overflow: auto;
+	padding: 3px;
 }
 
-/* css index */
+.dondeVer
+{
+	grid-area: dondeVer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+	justify-self: center;
+	padding: auto;
+}
+
+.trailer
+{
+	grid-area: trailer;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+}
+
+.portada
+{
+	grid-area: portada;
+
+	background-color: rgba(200, 200, 200, .9);
+	border: 1px solid black;
+
+	padding: 5px;
+}
 
 
+footer
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 10%;
+	margin: 3px;
+	text-align: right;
+}
 
-/* css contacto */
+@media only screen and (max-width: 576px)
+{
+	header
+	{
+		height: 15%;
+	}
+	section
+	{
+		height: 25%;
+	}
+	.botonPlataforma
+	{
+		padding: 2px;
+		border: 1px solid black;
+		width: 50px;
+		height: 50px;
+	}
+	main
+	{
+		margin: 0;
+		height: 60%;
+	}
 
+	footer
+	{
+		display: none;
+	}
+
+	.tituloSP
+	{
+		margin-top: 3px;
+		margin-bottom: 3px;
+		font-size: 15px;
+	}
+
+	.grid-layout
+	{
+		width: 80%;
+
+		grid-template-rows: 15% 65% 20%;
+		grid-template-columns: 40% 60%;
+
+		grid-template-areas: 	'tituloIndiv tituloIndiv'
+								'sinopsis portada'
+								'dondeVer portada';
+
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+	.tituloIndiv
+	{
+		font-size: 21px;
+	}
+}
