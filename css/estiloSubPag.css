@@ -1,11 +1,11 @@
-/*
-Paleta Summer
-#FAC89F
-#FCDABF
-#BFE9F1
-#A1DCE9
-#7AD1E1
-*/
+:root
+{
+	--color-s-1 : #FAC89F;
+	--color-s-2 : #FCDABF;
+	--color-s-3 : #BFE9F1;
+	--color-s-4 : #A1DCE9;
+	--color-s-5 : #7AD1E1;
+}
 
 *
 {
@@ -15,7 +15,7 @@ Paleta Summer
 
 body
 {
-	background-image: linear-gradient(to bottom,#FAC89F,#7AD1E1);
+	background-image: linear-gradient(to bottom,var(--color-s-1),var(--color-s-5));
 	font-family: 'Oswald',"Times New Roman", sans-serif;
 }
 
