@@ -19,6 +19,11 @@ body
 	font-family: 'Oswald',"Times New Roman", sans-serif;
 }
 
+body::-webkit-scrollbar 
+{
+	display: none;
+}
+
 header 
 {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -106,22 +111,6 @@ footer
 	text-align: right;
 }
 
-.centrar
-{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.centrarV
-{
-	vertical-align: middle;
-}
-
-.vacio
-{
-	display: none;
-}
-
 .tituloSP
 {
 	margin-top: 10px;
@@ -130,8 +119,6 @@ footer
 	text-align: center;
 	text-decoration: underline ;
 }
-
-/* css peliculas, series y anime */
 
 .catalogo
 {
@@ -209,9 +196,18 @@ footer
 	background-color: rgba(200, 200, 200, .9);
 	border: 1px solid black;
 
+	flex-wrap: row nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 5px;
-	justify-self: center;
-	padding: auto;
+}
+
+.botonDondeVer
+{
+	padding: 5px;
+	width: 35px;
+	height: 35px;
 }
 
 .puntuacion
@@ -280,4 +276,20 @@ footer
 								'portada sinopsis'
 								'dondeVer puntuacion';
 	}
+	.tituloIndiv
+	{
+		font-size: 21px;
+	}
+
+	.trailer
+	{
+		display: none;
+	}
+
+	.botonDondeVer
+{
+	padding: 3px;
+	width: 25px;
+	height: 25px;
+}
 }
