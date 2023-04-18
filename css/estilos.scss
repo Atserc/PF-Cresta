@@ -27,9 +27,16 @@ $colores:
 
 @mixin mediaQ($medida)
 {
-    @media screen and (max-width: map-get($breakpoints,$medida)){
-        @content;
-    }
+	@if map-has-key($breakpoints,$medida)
+	{
+    	@media screen and (max-width: map-get($breakpoints,$medida))
+		{
+        	@content;
+		}
+    }@else
+	{
+		@warn 'El valor '#{medida}' no existe en el mapa.'
+	}
 }
 
 body
