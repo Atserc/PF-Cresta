@@ -10,14 +10,34 @@ body {
 
 .landing {
   background-size: cover;
-  background-image: url("../assets/img/fondos/fondoLanding.jpg");
 }
 @media screen and (max-width: 576px) {
   .landing {
     background-image: url("../assets/img/fondos/fondoLandingVertical.jpg");
   }
 }
+@media screen and (min-width: 576px) {
+  .landing {
+    animation-name: cambiarFondo;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+  }
+}
 
+@keyframes cambiarFondo {
+  0%, 100% {
+    background-image: url("../assets/img/fondos/fondoLanding1.jpg");
+  }
+  25% {
+    background-image: url("../assets/img/fondos/fondoLanding2.jpg");
+  }
+  50% {
+    background-image: url("../assets/img/fondos/fondoLanding3.jpg");
+  }
+  75% {
+    background-image: url("../assets/img/fondos/fondoLanding4.jpg");
+  }
+}
 .botonLanding {
   background-color: rgba(0, 0, 0, 0.5);
 }
