@@ -25,6 +25,11 @@ $colores:
 	padding: 0;
 }
 
+@font-face {
+	font-family: 'OswaldLocal';
+	src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
 @mixin mediaQ($medida)
 {
 	@if map-has-key($breakpoints,$medida)
@@ -42,7 +47,7 @@ $colores:
 body
 {
     background-image: linear-gradient(to bottom, map-get($colores,verano1), map-get($colores,verano5));
-	font-family: 'Oswald',"Times New Roman", sans-serif;
+	font-family: 'OswaldLocal',"Times New Roman", sans-serif;
 }
 
 .landing
@@ -409,7 +414,6 @@ main::-webkit-scrollbar-thumb {
 	border: 1px solid black;
 
 	font-style: italic;
-	font-weight: bold;
 	overflow: auto;
 	padding: 3px;
 }
