@@ -438,6 +438,12 @@ footer {
   height: 50px;
   border-radius: 40%;
 }
+@media screen and (max-width: 576px) {
+  .iconosRedes {
+    width: 35px;
+    height: 35px;
+  }
+}
 
 .botonFooter {
   padding: 15px;
